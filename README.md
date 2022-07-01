@@ -15,9 +15,9 @@ docker run <nome_imagem> https://github.com/heldeveloper/pdi_test_transformacao 
 
 Com esse modelo de baixar os arquivos do git em tempo de execução precisamos ainda implementar a questão de segurança do git dentro do container para acesso a repositório privado.
 Dentro do que pesquisei até o momento existe algumas estratégias.
-[git_in_docker](https://www.baeldung.com/ops/dockerfile-git-strategies)
-[git_in_docker_option2_metodo_nao_seguro](https://pt.stackoverflow.com/questions/113663/clonar-reposit%C3%B3rio-privado-passando-senha-como-par%C3%A2metro)
-[git_in_docker_option3_metodo_seguro_com_ssh_key](https://stackoverflow.com/questions/18136389/using-ssh-keys-inside-docker-container)
+* [git_in_docker](https://www.baeldung.com/ops/dockerfile-git-strategies)
+* [git_in_docker_option2_metodo_nao_seguro](https://pt.stackoverflow.com/questions/113663/clonar-reposit%C3%B3rio-privado-passando-senha-como-par%C3%A2metro)
+* [git_in_docker_option3_metodo_seguro_com_ssh_key](https://stackoverflow.com/questions/18136389/using-ssh-keys-inside-docker-container)
 
 
 ## Chamada Airflow
