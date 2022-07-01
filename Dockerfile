@@ -1,4 +1,4 @@
-FROM  openjdk:8-jre-slim-buster
+FROM  pentaho_pdi:0.1
 
 LABEL maintainer="heliezer.goncalves@healthbit.com.br" \
     pdi=PDI \
