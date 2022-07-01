@@ -39,9 +39,9 @@ pentaho = DockerOperator(
     api_version='auto',
     auto_remove=True,
     environment={
-    'GIT_URL': "https://github.com/biwed/pdi_trick.git",
-    'PROJECT': "clone_row_on_pdi",
-    'OBJECT' : "clone_row_on_pdi.ktr"
+    'GIT_URL': "https://github.com/heldeveloper/pdi_test_transformacao",
+    'PROJECT': " teste_pdi",
+    'OBJECT' : "job_teste.kjb"
     },
     mem_limit="4g",
     docker_url="unix://var/run/docker.sock",
