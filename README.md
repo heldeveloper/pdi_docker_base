@@ -4,16 +4,16 @@
 
 1. Primeiro criamos uma imagem que contem o pdi instalado, acessar o diretório pdi_base realizar build da imagem ***execução é demorada devido tamanho do pdi quase 2G imagem padrão dentro do diretório pdi_base** (Verificar Melhorias para implementação).
     * `docker build -t pentaho_pdi:01 .`
-2. Acessar o diretório principal onde temos o docker compose, realizar build da imagem de execução do container esta execução finalizara a criação da nossa imagem.
+2. Acessar o diretório principal pdi_docker_base, onde temos o docker compose, realizar build da imagem de execução do container.
     * `docker-compose build`
 
 
 # Execução do container
 
 1. Executar container acessar no diretório pdi_docker_base.
-    * docker run --rm `nome_imagem_gerada_no_docker_compose` `nome do caminho git` `nome da pasta no git` `nome do job ou transformação` arquivo pentaho com extensões .kjb ou .ktr
+    * `docker run --rm <nome_imagem_gerada_no_docker_compose> <nome do caminho git> <nome_da pasta no git> <nome do job ou transformação>` arquivo pentaho com extensões .kjb ou .ktr
 
-Exemplo.
+Exemplo este job gera apenas uma uuid aleatória.
 ```
 docker run --rm pentaho_pdi_container:0.1 https://github.com/heldeveloper/pdi_test_transformacao teste_pdi job_teste.kjb
 ```
